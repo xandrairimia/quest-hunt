@@ -1,0 +1,64 @@
+#root {
+  width: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  form {
+    line-height: 2em;
+  }
+}
+
+/* h1 { */
+  /* color: #E9C46A; */
+  /* font-family: "VT323"; */
+  /* display: center;
+  position: relative;
+  font-size: 3em;
+  text-align: center;
+  letter-spacing : 0.1em; */
+/* } */
+
+/* .logo {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  justify-content: center;
+  -webkit-text-stroke: 1em black;
+} */
+
+/* Logo Stroke (the orange stroke) */
+.text-stroke-1 {
+  -webkit-text-stroke: 0.40em #E76F51;
+}
+
+body {
+  position: relative;
+}
+
+body::before {
+  background-image: url("src/assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  content: '';
+  opacity: 0.2;
+}
