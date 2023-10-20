@@ -30,14 +30,30 @@ export default {
       fontFamily: {
         'sans' : ["VT323", ...defaultTheme.fontFamily.sans],
       },
+      width: {
+        '13': '95.7671958%',
+        '14': '84.1269841%',
+      },
+      height: {
+        '100': '7.20524017%',
+        '110': '87.5545852%',
+      },
+      boxShadow: {
+        '3xl': '6px 6px 0px #9D2B0E',
+      },
     },
     colors: {
       'blood': '#E76F51',
       'yellow': '#E9C46A',
       'puke': '#2F7B15',
+      'white': '#FDF2DF',
+      'orange': '#F4A261',
+      'red': '#9D2B0E',
     }
   },
 
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/container-queries'),
+  ],
 }
 

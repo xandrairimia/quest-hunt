@@ -62,3 +62,11 @@ body::before {
   content: '';
   opacity: 0.2;
 }
+
+h2 {
+  font-family: VT323;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  color: #E76F51;
+}
