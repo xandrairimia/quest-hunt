@@ -1,3 +1,3 @@
-# Quent Hunt - To Do App
+# Quest Hunt - To Do App
 
-To Do App in React.js with Tailwind Framework with a 'indie game' feel.
+To Do App in React.js with Tailwind Framework with a 'indie game' feel. Design also done by me.
