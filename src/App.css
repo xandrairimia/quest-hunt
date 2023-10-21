@@ -64,7 +64,7 @@ body::before {
 }
 
 h2 {
-  font-family: VT323;
+  font-family: 'VT323';
   font-size: 20px;
   line-height: normal;
   letter-spacing: 0.4px;

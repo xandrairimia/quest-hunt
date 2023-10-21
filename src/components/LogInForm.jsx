@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
+import ButtonInOut from "./ButtonInOut";
 import FormField from "./FormField";
 import Logo from "./logo";
 
@@ -41,17 +42,19 @@ export default function Login(props) {
           setter={setPass}
         />
         <p>
-          <button type="submit" className="relative top-[20px]">
+          <ButtonInOut type="submit" className="relative inset-y-[100px]">
             Log In
-          </button>
+          </ButtonInOut>
+        </p>
+        <p>
+          <ButtonInOut
+            className="relative inset-y-[160px]"
+            onClick={() => navigate("/register")}
+          >
+            Register Here
+          </ButtonInOut>
         </p>
       </form>
-      <button
-        className="relative xs:inset-y-[80px] sm:inset-y-[180px]"
-        onClick={() => navigate("/register")}
-      >
-        Register Here
-      </button>
     </div>
   );
 }
