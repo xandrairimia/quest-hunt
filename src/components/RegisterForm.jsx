@@ -53,18 +53,18 @@ export default function Register(props) {
             setter={setPass}
           />
           <p>
-            <ButtonInOut type="submit" className="relative top-[20px]">
+            <ButtonInOut type="submit" className="relative inset-y-10">
               Register
             </ButtonInOut>
           </p>
+          <ButtonInOut
+            className="relative xs:inset-y-20 sm:inset-y-20"
+            onClick={() => navigate("/")}
+          >
+            Log In Here
+          </ButtonInOut>
         </div>
       </form>
-      <ButtonInOut
-        className="relative xs:inset-y-[80px] sm:inset-y-[180px]"
-        onClick={() => navigate("/")}
-      >
-        Log In Here
-      </ButtonInOut>
     </div>
   );
 }

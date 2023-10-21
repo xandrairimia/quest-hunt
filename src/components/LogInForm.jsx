@@ -42,13 +42,13 @@ export default function Login(props) {
           setter={setPass}
         />
         <p>
-          <ButtonInOut type="submit" className="relative inset-y-[100px]">
+          <ButtonInOut type="submit" className="relative inset-y-20">
             Log In
           </ButtonInOut>
         </p>
         <p>
           <ButtonInOut
-            className="relative inset-y-[160px]"
+            className="relative inset-y-32"
             onClick={() => navigate("/register")}
           >
             Register Here
