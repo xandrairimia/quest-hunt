@@ -39,16 +39,24 @@ export default {
       },
       boxShadow: {
         '3xl': '6px 6px 0px #9D2B0E',
+        '4xl': '2px 4px 0px #9D2B0E',
+      },
+      borderWidth: {
+        '6': '6px',
       },
     },
     colors: {
       'blood': '#E76F51',
       'yellow': '#E9C46A',
-      'puke': '#2F7B15',
       'white': '#FDF2DF',
       'orange': '#F4A261',
       'red': '#9D2B0E',
-    }
+      'blue': '#2A9D8F',
+    },
+    fontSize: {
+      'sm': '1.5em',
+      '3xl': '1.7em',
+    },
   },
 
   plugins: [
