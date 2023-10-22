@@ -22,17 +22,11 @@ export default function Register(props) {
   };
   //add logo
   return (
-    <div>
+    <div className="flex flex-col items-center pt-60">
       <div>
-        <Logo
-          className="relative xs:inset-y-[100px] sm:inset-y-[180px]"
-          logo={"Quest Hunt"}
-        />
+        <Logo logo={"Quest Hunt"} />
       </div>
-      <form
-        onSubmit={handleSubmit}
-        className="relative xs:inset-y-[20px] sm:inset-y-[140px]"
-      >
+      <form onSubmit={handleSubmit}>
         <div>
           <FormField
             value={name}
@@ -52,17 +46,10 @@ export default function Register(props) {
             placeholder="******"
             setter={setPass}
           />
-          <p>
-            <ButtonInOut type="submit" className="relative inset-y-10">
-              Register
-            </ButtonInOut>
-          </p>
-          <ButtonInOut
-            className="relative xs:inset-y-20 sm:inset-y-20"
-            onClick={() => navigate("/")}
-          >
-            Log In Here
-          </ButtonInOut>
+          <div className="flex flex-col items-center pt-12 gap-12">
+            <ButtonInOut type="submit">Register</ButtonInOut>
+            <ButtonInOut onClick={() => navigate("/")}>Log In Here</ButtonInOut>
+          </div>
         </div>
       </form>
     </div>

@@ -18,17 +18,11 @@ export default function Login(props) {
   };
 
   return (
-    <div>
+    <div className="flex flex-col items-center pt-60">
       <div>
-        <Logo
-          className="relative xs:inset-y-[100px] sm:inset-y-[180px]"
-          logo={"Quest Hunt"}
-        />
+        <Logo logo={"Quest Hunt"} />
       </div>
-      <form
-        onSubmit={handleSubmit}
-        className="relative xs:inset-y-[20px] sm:inset-y-[140px]"
-      >
+      <form onSubmit={handleSubmit}>
         <FormField
           value={email}
           type="email"
@@ -41,19 +35,12 @@ export default function Login(props) {
           placeholder="******"
           setter={setPass}
         />
-        <p>
-          <ButtonInOut type="submit" className="relative inset-y-20">
-            Log In
-          </ButtonInOut>
-        </p>
-        <p>
-          <ButtonInOut
-            className="relative inset-y-32"
-            onClick={() => navigate("/register")}
-          >
+        <div className="flex flex-col items-center pt-12 gap-12">
+          <ButtonInOut type="submit">Log In</ButtonInOut>
+          <ButtonInOut onClick={() => navigate("/register")}>
             Register Here
           </ButtonInOut>
-        </p>
+        </div>
       </form>
     </div>
   );

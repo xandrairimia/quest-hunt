@@ -6,7 +6,7 @@ export default function FormField(props) {
           {props.type}
         </label>
         <input
-          className="rounded border-2 border-yellow px-4 py-4 h-10 text-xl leading-6"
+          className="rounded border-2 bg-white border-orange px-4 py-4 h-10 text-xl leading-6"
           value={props.value}
           name={props.type}
           type={props.type}

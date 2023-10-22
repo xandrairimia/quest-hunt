@@ -2,7 +2,12 @@ import clsx from "clsx";
 
 export default function Container(props) {
   return (
-    <div className="flex flex-col bg-yellow p-2 gap-2">
+    <div
+      className={clsx(
+        "flex flex-col bg-yellow p-2 gap-2",
+        props.isFiller && "h-full",
+      )}
+    >
       <div className="flex flex-row gap-2">
         <div //star
           className="bg-white border-4 flex justify-center border-orange w-9 h-8"
@@ -16,7 +21,11 @@ export default function Container(props) {
         </div>
       </div>
       <div
-        className={clsx("bg-white border-4 border-orange p-2", props.className)}
+        className={clsx(
+          "bg-white border-4 border-orange p-2",
+          props.isFiller && "h-full",
+          props.className,
+        )}
       >
         {props.children}
       </div>
