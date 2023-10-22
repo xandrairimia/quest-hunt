@@ -4,7 +4,7 @@ export default function Statistics(props) {
   return (
     <div
       className={clsx(
-        "flex flex-row lg:gap-16 lg:text-xl sm:gap-4 sm:text-xs text-center bg-blood border-red border-4 justify-center order-4 p-4 shadow-3xl text-white",
+        "flex flex-row w-full h-full lg:gap-16 lg:text-xl sm:gap-4 sm:text-xs text-center bg-blood border-red border-4 justify-center p-4 shadow-3xl text-white",
         props.className,
       )}
     >

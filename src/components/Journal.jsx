@@ -2,14 +2,16 @@ import clsx from "clsx";
 
 export default function Journal(props) {
   return (
-    <div
+    <button
       className={clsx(
         "w-full h-full border-4 text-3xl text-red flex items-end p-6 justify-end border-red shadow-3xl",
         props.className,
       )}
     >
-      {props.children}
-      {props.name}
-    </div>
+      <div className="flex items-center w-full gap-8">
+        {props.children}
+        {props.name}
+      </div>
+    </button>
   );
 }

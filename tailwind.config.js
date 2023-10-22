@@ -44,6 +44,10 @@ export default {
       borderWidth: {
         '6': '6px',
       },
+      fontSize: {
+        'sm': '1.5em',
+        '3xl': '1.7em',
+      },
     },
     colors: {
       'blood': '#E76F51',
@@ -52,10 +56,6 @@ export default {
       'orange': '#F4A261',
       'red': '#9D2B0E',
       'blue': '#2A9D8F',
-    },
-    fontSize: {
-      'sm': '1.5em',
-      '3xl': '1.7em',
     },
   },
 
