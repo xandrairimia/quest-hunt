@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ButtonInOut from "./ButtonInOut";
-import FormField from "./FormField";
-import Logo from "./logo";
+import ButtonInOut from "../components/ButtonInOut";
+import FormField from "../components/FormField";
+import Logo from "../components/logo";
 
 export default function Register(props) {
   let navigate = useNavigate();

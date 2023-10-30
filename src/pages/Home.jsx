@@ -5,13 +5,13 @@ import {
   SunIcon,
 } from "@heroicons/react/24/solid";
 import { useNavigate } from "react-router-dom";
-import AddQuest from "./AddQuest";
-import ButtonInOut from "./ButtonInOut";
-import Container from "./Container";
-import Journal from "./Journal";
-import Pages from "./Pages";
-import Statistics from "./Statistics";
-import ToDo from "./ToDo";
+import AddQuest from "../components/AddQuest";
+import ButtonInOut from "../components/ButtonInOut";
+import Container from "../components/Container";
+import Journal from "../components/Journal";
+import Pages from "../components/Pages";
+import Statistics from "../components/Statistics";
+import ToDo from "../components/ToDo";
 
 export default function Home(props) {
   let navigate = useNavigate();
@@ -80,7 +80,7 @@ export default function Home(props) {
           <Container isFiller={true} title="Active Quests">
             <div class="flex flex-col gap-4 xl:px-6 sm:px-2 w-full h-full">
               <div className="py-6">
-                <AddQuest className="w-full h-full"></AddQuest>
+                <AddQuest className="w-full h-3/4"></AddQuest>
               </div>
               <div className="flex flex-col py-2 gap-4">
                 <h1 className="text-red text-3xl w-full h-hull">Main Quests</h1>

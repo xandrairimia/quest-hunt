@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@heroicons/react": "^2.0.18",
     "@material-tailwind/react": "^2.1.4",
+    "@mui/material": "^5.14.15",
     "@tailwindcss/container-queries": "^0.1.1",
     "clsx": "^2.0.0",
     "react": "^18.2.0",
